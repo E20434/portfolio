@@ -1,198 +1,529 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>P.A. Wickramaarachchi | Portfolio</title>
-  <meta name="description" content="Computer Engineering undergraduate portfolio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>P.A. Wickramaarachchi — Backend &amp; Cloud Engineer</title>
+  <meta name="description" content="Portfolio of P.A. Wickramaarachchi, a Computer Engineering undergraduate at the University of Peradeniya building reliable backend systems and cloud-integrated applications." />
+  <meta name="theme-color" content="#140f0b" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="P.A. Wickramaarachchi — Backend & Cloud Engineer" />
+  <meta property="og:description" content="Computer Engineering undergraduate building reliable backend systems, APIs and cloud infrastructure." />
+  <meta property="og:image" content="images/profile-pic.jpeg" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23140f0b'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23d3a468' text-anchor='middle'%3EPW%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="container header">
-    <div class="brand">
-      <div class="avatar" aria-hidden="true">PA</div>
-      <div>
-        <h1>P.A. Wickramaarachchi</h1>
-        <p class="subtitle">Computer Engineering Undergraduate · University of Peradeniya</p>
-      </div>
-    </div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- Icon sprite (decorative unless noted) -->
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="1.5" y="1.5" width="21" height="21" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><text x="12" y="16.5" font-family="Georgia,serif" font-weight="700" font-size="10.5" fill="currentColor" text-anchor="middle">in</text></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="15 3 21 3 21 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="8 6 2 12 8 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+      <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="12" y1="1.5" x2="12" y2="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="12" y1="18" x2="12" y2="22.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="1.5" y1="12" x2="6" y2="12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="18" y1="12" x2="22.5" y2="12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+      <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="2" y1="13" x2="22" y2="13" stroke="currentColor" stroke-width="1.6"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><polyline points="2 17 12 22 22 17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><polyline points="2 12 12 17 22 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="P.A. Wickramaarachchi — home">
+        <span class="brand-mark" aria-hidden="true">PW</span>
+        <span class="brand-name">P.A. Wickramaarachchi</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg>
+      </button>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
+  <main id="main">
+    <!-- HERO -->
     <section class="hero">
-      <div>
-        <h2>Building robust, production-ready systems.</h2>
-        <p>
-          I’m a Computer Engineering undergraduate focused on backend architecture, API reliability,
-          scalability, and cloud-integrated applications.
+      <div class="hero-media" aria-hidden="true">
+        <img src="images/profile-pic.jpeg" alt="" width="853" height="1280" fetchpriority="high" />
+        <div class="hero-media-fade"></div>
+      </div>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">| P.A. WICKRAMAARACHCHI |</p>
+          <h1 class="display">
+            Backend &amp;<br />
+            <em>Cloud Systems</em> Engineer
+          </h1>
+          <p class="lead">
+            Computer Engineering undergraduate at the University of Peradeniya, focused on backend
+            architecture, API reliability, and scalable cloud-integrated applications.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">
+              <svg class="icon" aria-hidden="true"><use href="#i-layers"></use></svg>
+              View Projects
+            </a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-stats reveal">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#i-award"></use></svg>
+          <div class="stat">
+            <span class="stat-num">3.58</span>
+            <span class="stat-label">GPA out of 4.0</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">AWS certifications</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap hero-bar">
+        <div class="hero-bar-item">
+          <span class="hero-bar-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg></span>
+          <div>
+            <p class="hero-bar-label">Contact Information</p>
+            <a href="tel:+94728146653">+94 72 814 6653</a>
+            <a href="mailto:e20434@eng.pdn.ac.lk">e20434@eng.pdn.ac.lk</a>
+          </div>
+        </div>
+
+        <div class="hero-bar-item">
+          <span class="hero-bar-icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg></span>
+          <div>
+            <p class="hero-bar-label">Based In</p>
+            <span class="hero-bar-static">Athurugiriya, Colombo, Sri Lanka</span>
+          </div>
+        </div>
+
+        <div class="social-row">
+          <a href="https://github.com/E20434" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+            <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/p-a-wickramaarachchi-32a734280/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+            <svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg>
+          </a>
+          <a href="mailto:e20434@eng.pdn.ac.lk" aria-label="Send an email">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <p class="eyebrow reveal">| ABOUT ME |</p>
+
+        <div class="about-grid">
+          <div class="about-media reveal">
+            <img src="images/profile-pic.jpeg" alt="Portrait of P.A. Wickramaarachchi" width="853" height="1280" loading="lazy" />
+          </div>
+
+          <div class="about-copy reveal">
+            <p class="pull-quote">
+              My focus is building robust, production-ready software — full-stack and
+              cloud-integrated systems with a strong emphasis on backend architecture, API
+              reliability, and scalability.
+            </p>
+            <p>
+              I'm a Computer Engineering undergraduate at the University of Peradeniya, currently
+              holding a GPA of 3.58/4.0. I enjoy translating engineering principles into practical
+              solutions for real-world problems through structured design and implementation —
+              from REST APIs and databases to containerized deployments and cloud infrastructure.
+            </p>
+            <p>
+              Alongside coursework, I've worked on independent and group projects spanning weather
+              data platforms, social reading apps, and IoT-connected robotics, and I'm currently
+              researching how LLMs and VR can be combined for automated skill assessment in nursing
+              education.
+            </p>
+
+            <hr class="divider" />
+
+            <ul class="achievement-list">
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg>
+                AWS Cloud Quest — hands-on cloud architecture &amp; problem-solving
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg>
+                AWS Practitioner Essentials — cloud concepts, security &amp; pricing
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg>
+                Presented a third-year project at EngEx, University of Peradeniya (2024)
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg>
+                Guided undergraduate MySQL learning sessions on queries &amp; normalization
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-alt">
+      <div class="wrap">
+        <p class="eyebrow reveal">| EXPERIENCE |</p>
+        <h2 class="section-title reveal">Where I've worked</h2>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-icon"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"></use></svg></span>
+            <div class="timeline-body">
+              <div class="timeline-head">
+                <h3>Software Engineer Intern <span>— Raahi</span></h3>
+                <span class="timeline-date">Apr 2026 – Oct 2026</span>
+              </div>
+              <ul>
+                <li>Developed and maintained production backend services and RESTful APIs using Node.js, NestJS, and TypeScript.</li>
+                <li>Designed and integrated AWS cloud services — Lambda, DynamoDB, ECS, EventBridge Scheduler, and Amplify — for scalable application infrastructure.</li>
+                <li>Built database queries, migrations, and data-access logic across DynamoDB and relational databases.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section">
+      <div class="wrap">
+        <p class="eyebrow reveal">| RESEARCH |</p>
+        <div class="research-card reveal">
+          <span class="research-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg></span>
+          <div>
+            <h3>Immersive AI-Driven Nursing Education</h3>
+            <ul>
+              <li>Conducting an in-depth literature review on integrating Large Language Models (LLMs) and Virtual Reality (VR) for automated skill assessment in nursing education.</li>
+              <li>Analyzing AI-driven evaluation techniques to improve objectivity, reliability, and adaptability in advanced wound-care training environments.</li>
+              <li>Exploring system architectures that combine immersive simulation with intelligent feedback mechanisms to enhance clinical training outcomes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="wrap">
+        <p class="eyebrow reveal">| PROJECTS |</p>
+        <h2 class="section-title reveal">Selected work</h2>
+
+        <div class="grid grid-3">
+          <article class="card project-card reveal">
+            <div class="card-head">
+              <h3>WeatherNow</h3>
+              <span class="tag">Individual</span>
+            </div>
+            <p>
+              Real-time weather forecast application with a Spring Boot REST backend and a React
+              frontend. Redis-backed rate limiting controls third-party API usage; Docker keeps
+              deployment and environments consistent.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Spring Boot</span>
+              <span class="pill">REST API</span>
+              <span class="pill">Redis</span>
+              <span class="pill">Docker</span>
+              <span class="pill">React</span>
+            </div>
+            <a class="card-link" href="https://github.com/E20434" target="_blank" rel="noreferrer">
+              View on GitHub <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg>
+            </a>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="card-head">
+              <h3>BookWallet</h3>
+              <span class="tag">Group</span>
+            </div>
+            <p>
+              Social platform for book lovers — profiles, follow system, communities, in-app PDF
+              reading, and ratings. Node.js/MySQL backend paired with a Flutter mobile app.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Node.js</span>
+              <span class="pill">MySQL</span>
+              <span class="pill">Flutter</span>
+              <span class="pill">Firebase</span>
+            </div>
+            <a class="card-link" href="https://github.com/E20434" target="_blank" rel="noreferrer">
+              View on GitHub <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg>
+            </a>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="card-head">
+              <h3>RobotWaiter</h3>
+              <span class="tag">Group</span>
+            </div>
+            <p>
+              Cloud-connected restaurant automation system: React/Node.js/Firebase dashboards for
+              admins and staff, plus a Raspberry Pi delivery robot coordinated in real time via AWS
+              IoT Core and MQTT.
+            </p>
+            <div class="pill-row">
+              <span class="pill">React</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">AWS IoT Core</span>
+              <span class="pill">MQTT</span>
+              <span class="pill">Raspberry Pi</span>
+            </div>
+            <a class="card-link" href="https://github.com/E20434" target="_blank" rel="noreferrer">
+              View on GitHub <svg class="icon" aria-hidden="true"><use href="#i-external"></use></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="wrap">
+        <p class="eyebrow reveal">| SKILLS |</p>
+        <h2 class="section-title reveal">Technical skills</h2>
+
+        <div class="grid grid-4">
+          <div class="card skill-card reveal">
+            <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg></span>
+            <h3>Programming</h3>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">Java</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">SQL</span>
+            </div>
+          </div>
+
+          <div class="card skill-card reveal">
+            <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-layers"></use></svg></span>
+            <h3>Development</h3>
+            <div class="pill-row">
+              <span class="pill">Node.js</span>
+              <span class="pill">NestJS</span>
+              <span class="pill">React</span>
+              <span class="pill">Spring Boot</span>
+              <span class="pill">Flutter</span>
+            </div>
+          </div>
+
+          <div class="card skill-card reveal">
+            <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-chip"></use></svg></span>
+            <h3>Concepts</h3>
+            <div class="pill-row">
+              <span class="pill">Data Structures</span>
+              <span class="pill">REST APIs</span>
+              <span class="pill">Cloud Computing</span>
+              <span class="pill">Networking</span>
+            </div>
+          </div>
+
+          <div class="card skill-card reveal">
+            <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-tool"></use></svg></span>
+            <h3>Tools &amp; Cloud</h3>
+            <div class="pill-row">
+              <span class="pill">AWS (Lambda, DynamoDB, ECS)</span>
+              <span class="pill">Docker</span>
+              <span class="pill">Redis</span>
+              <span class="pill">Firebase</span>
+              <span class="pill">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section section-alt">
+      <div class="wrap">
+        <p class="eyebrow reveal">| CERTIFICATIONS |</p>
+        <h2 class="section-title reveal">Certifications</h2>
+
+        <div class="grid grid-2">
+          <div class="card cert-card reveal">
+            <span class="cert-icon"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg></span>
+            <div>
+              <h3>AWS Cloud Quest</h3>
+              <p>Hands-on cloud learning covering core AWS services, cloud architecture, and practical problem-solving scenarios.</p>
+            </div>
+          </div>
+          <div class="card cert-card reveal">
+            <span class="cert-icon"><svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg></span>
+            <div>
+              <h3>AWS Practitioner Essentials</h3>
+              <p>Foundational certification covering AWS cloud concepts, security, pricing models, and core services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION + VOLUNTEERING -->
+    <section id="education" class="section">
+      <div class="wrap">
+        <div class="two-col">
+          <div class="reveal">
+            <p class="eyebrow">| EDUCATION |</p>
+            <div class="card edu-card">
+              <span class="edu-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg></span>
+              <div>
+                <h3>BSc (Hons) in Computer Engineering</h3>
+                <p>University of Peradeniya, Sri Lanka · Expected 2026</p>
+                <p class="muted">Current GPA: 3.58/4.0</p>
+              </div>
+            </div>
+            <div class="card edu-card">
+              <span class="edu-icon"><svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg></span>
+              <div>
+                <h3>GCE Advanced Level</h3>
+                <p>Nalanda College, Colombo 10 · 2020</p>
+                <p class="muted">3As — District Rank 254</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <p class="eyebrow">| VOLUNTEERING |</p>
+            <div class="card edu-card">
+              <span class="edu-icon"><svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg></span>
+              <div>
+                <h3>Casual Instructing</h3>
+                <p>2024 – 2025</p>
+                <p class="muted">Assisted undergraduates in MySQL sessions — queries, relational modeling, and normalization.</p>
+              </div>
+            </div>
+            <div class="card edu-card">
+              <span class="edu-icon"><svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg></span>
+              <div>
+                <h3>EngEx — University of Peradeniya</h3>
+                <p>2024</p>
+                <p class="muted">Presented a third-year undergraduate project at the Engineering Exhibition.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRENGTHS -->
+    <section class="section section-alt">
+      <div class="wrap">
+        <p class="eyebrow reveal">| STRENGTHS |</p>
+        <div class="grid grid-3">
+          <div class="strength reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-chip"></use></svg>
+            <p>Strong analytical and problem-solving skills with a systems-oriented mindset.</p>
+          </div>
+          <div class="strength reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-cloud"></use></svg>
+            <p>Ability to design scalable, secure, and maintainable software solutions.</p>
+          </div>
+          <div class="strength reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-star"></use></svg>
+            <p>Quick learner with strong adaptability to new technologies and frameworks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERENCES -->
+    <section id="references" class="section">
+      <div class="wrap">
+        <p class="eyebrow reveal">| REFERENCES |</p>
+        <div class="grid grid-2">
+          <div class="card reference-card reveal">
+            <h3>Dr. Upul Jayasinghe</h3>
+            <p class="muted">Senior Lecturer, Dept. of Computer Engineering</p>
+            <p class="muted">University of Peradeniya</p>
+            <a href="mailto:upuljm@eng.pdn.ac.lk">upuljm@eng.pdn.ac.lk</a>
+          </div>
+          <div class="card reference-card reveal">
+            <h3>Mrs. Yashodha Vimukthi</h3>
+            <p class="muted">Lecturer, Dept. of Computer Engineering</p>
+            <p class="muted">University of Peradeniya</p>
+            <a href="mailto:yasodhav@eng.pdn.ac.lk">yasodhav@eng.pdn.ac.lk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="wrap">
+        <p class="eyebrow reveal">| CONTACT |</p>
+        <h2 class="section-title reveal">Let's build something reliable together</h2>
+        <p class="lead reveal">
+          Open to backend, cloud, and full-stack engineering opportunities. Reach out any time.
         </p>
 
-        <div class="cta">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="#contact">Contact</a>
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary" href="mailto:e20434@eng.pdn.ac.lk">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+            e20434@eng.pdn.ac.lk
+          </a>
+          <a class="btn btn-outline" href="tel:+94728146653">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+            +94 72 814 6653
+          </a>
         </div>
 
-        <div class="links">
-          <a href="mailto:e20434@eng.pdn.ac.lk" target="_blank" rel="noreferrer">e20434@eng.pdn.ac.lk</a>
-          <span>·</span>
-          <a href="https://github.com/E20434" target="_blank" rel="noreferrer">github.com/E20434</a>
-          <span>·</span>
-          <a href="https://www.linkedin.com/in/p-a-wickramaarachchi-32a734280/" target="_blank" rel="noreferrer">in:
-            P.A. WICKRAMAARACHCHI</a>
-          <span>·</span>
-          <span>Colombo, Sri Lanka</span>
+        <div class="social-row reveal">
+          <a href="https://github.com/E20434" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+            <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/p-a-wickramaarachchi-32a734280/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+            <svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg>
+          </a>
         </div>
       </div>
-
-      <div class="card quick">
-        <h3>Highlights</h3>
-        <ul>
-          <li>GPA: 3.58/4.0</li>
-          <li>Full-stack + Cloud integrations</li>
-          <li>API reliability + rate limiting (Redis)</li>
-          <li>Docker-based deployments</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>
-        Computer Engineering undergraduate at the University of Peradeniya with a strong interest in
-        building robust, production-ready software systems. Experienced in full-stack and cloud-integrated
-        applications with emphasis on backend architecture, API reliability, and scalability.
-      </p>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-
-      <div class="grid">
-        <article class="card">
-          <div class="card-head">
-            <h3>WeatherNow</h3>
-            <span class="tag">Individual</span>
-          </div>
-          <p>
-            Spring Boot REST backend + React frontend. Integrated third-party weather APIs with
-            Redis-backed rate limiting and Docker containerization.
-          </p>
-          <div class="pill-row">
-            <span class="pill">Spring Boot</span>
-            <span class="pill">REST</span>
-            <span class="pill">Redis</span>
-            <span class="pill">Docker</span>
-            <span class="pill">React</span>
-          </div>
-          <div class="actions">
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">Live Demo</a>
-          </div>
-          <p class="hint">Replace GitHub/Live Demo links.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-head">
-            <h3>BookWallet</h3>
-            <span class="tag">Group</span>
-          </div>
-          <p>
-            Social platform for book lovers: profiles, follow system, communities, PDF reading,
-            and rating features. Node.js/MySQL backend + Flutter mobile app.
-          </p>
-          <div class="pill-row">
-            <span class="pill">Node.js</span>
-            <span class="pill">MySQL</span>
-            <span class="pill">Flutter</span>
-            <span class="pill">Firebase</span>
-          </div>
-          <div class="actions">
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">Demo</a>
-          </div>
-          <p class="hint">Replace links.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-head">
-            <h3>RobotWaiter</h3>
-            <span class="tag">Group</span>
-          </div>
-          <p>
-            Cloud-connected restaurant automation system with dashboards and a delivery robot.
-            Uses AWS IoT Core + MQTT + Firebase for real-time coordination.
-          </p>
-          <div class="pill-row">
-            <span class="pill">React</span>
-            <span class="pill">Node.js</span>
-            <span class="pill">Firebase</span>
-            <span class="pill">AWS IoT Core</span>
-            <span class="pill">MQTT</span>
-            <span class="pill">Raspberry Pi</span>
-          </div>
-          <div class="actions">
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn small" href="#" target="_blank" rel="noreferrer">Write-up</a>
-          </div>
-          <p class="hint">Replace links.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <h2>Technical Skills</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Programming</h3>
-          <p>Python, Java, C, JavaScript</p>
-        </div>
-        <div class="card">
-          <h3>Development</h3>
-          <p>Flutter, Node.js, React, Spring Boot</p>
-        </div>
-        <div class="card">
-          <h3>Tools</h3>
-          <p>GitHub, Firebase, AWS IoT Core, Docker, Redis, VS Code</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <h2>Education</h2>
-      <div class="card">
-        <h3>BSc (Hons) in Computer Engineering (Expected 2026)</h3>
-        <p>University of Peradeniya, Sri Lanka · GPA: 3.58/4.0</p>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <div class="card">
-        <p><strong>Email:</strong> <a href="mailto:e20434@eng.pdn.ac.lk">e20434@eng.pdn.ac.lk</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/E20434" target="_blank"
-            rel="noreferrer">github.com/E20434</a></p>
-        <p><strong>linkedin:</strong> <a href="https://www.linkedin.com/in/p-a-wickramaarachchi-32a734280/" target="_blank"
-            rel="noreferrer">P.A.Wickramaarachchi</a></p>
-
-        <p><strong>Phone:</strong> +94 72 814 6653</p>
-      </div>
-      <footer class="footer">
-        <p>© <span id="year"></span> P.A. Wickramaarachchi</p>
-      </footer>
     </section>
   </main>
 
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> P.A. Wickramaarachchi. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
-
 </html>
